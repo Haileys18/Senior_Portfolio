@@ -92,18 +92,22 @@ p {
   margin-top: 0;
 }
 
-.container {
-  display: flex; /* Makes the container a flex container */
-  justify-content: space-between; /* Distributes space between items */
-  /* or justify-content: flex-start; if you want items to hug the left */
-  /* or justify-content: flex-end; if you want items to hug the right */
-}
-
-.left-container,
-.right-container {
-  flex: 1; /* Allows containers to grow and shrink proportionally */
+.left-container {
+  float: left;
+  width: 48%; /* Adjust width as needed, leaving space for margin/padding */
   padding: 20px;
   border: 1px solid #ccc;
+}
+
+.right-container {
+  float: right;
+  width: 48%; /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.float-container {
+  overflow: hidden; /* Alternative clearfix method */
 }
 
 
