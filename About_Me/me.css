@@ -91,14 +91,21 @@ p {
   margin-top: 0;
 }
 
-.center-container {
-  display: flex; /* Make the container a flex container */
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-  height: 100%; /* Ensure the container takes full height of its parent (body) */
-  position: relative;
-  z-index: 10;
+.container {
+  display: flex; /* Makes the container a flex container */
+  justify-content: space-between; /* Distributes space between items */
+  /* or justify-content: flex-start; if you want items to hug the left */
+  /* or justify-content: flex-end; if you want items to hug the right */
 }
+
+.left-container,
+.right-container {
+  flex: 1; /* Allows containers to grow and shrink proportionally */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
 h1{
   font-family: "Radley", serif;
   font-weight: 400;
