@@ -75,7 +75,7 @@
 
 
 body, html {
-   background-color:#f4f1e8;
+  background-color:#f4f1e8;
   height: 100%; /* Ensure body and html take full viewport height */
   margin: 0;
   padding: 0;
