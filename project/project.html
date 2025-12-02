@@ -80,7 +80,25 @@ body, html {
   background-color:#f4f1e8;
   height: 100%; /* Ensure body and html take full viewport height */
 }
+  .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+    }
 
+    .project {
+        background:;
+        border-radius: 5px;
+        padding: 12px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+     .project iframe {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -92,5 +110,13 @@ body, html {
   </header>
           <h1><i>Hello</i>, <b>Welcome to My Projects</b></h1>
   
- 
+ <div class="project-grid">
+
+        <!-- Turtle -->
+        <div class="project">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/bCU6Y10HocV4HFtT1EARia/PreParent?node-id=35-52&p=f&scaling=min-zoom&content-scaling=fixed&page-id=35%3A51&starting-point-node-id=35%3A52&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            <h3>Sheldon (Male Box turtle)</h3>
+            <p> (1 years old) Sheldon likes to sit in the sun, and doesn’t bite!</p>
+        </div>
+ </div>
 </html>
