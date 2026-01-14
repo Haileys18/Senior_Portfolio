@@ -86,7 +86,8 @@ p {
   float: left;
   width: 48%; /* Adjust width as needed, leaving space for margin/padding */
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px dotted #ccc;
+  top: 30px;
 }
 
 .right-container {
